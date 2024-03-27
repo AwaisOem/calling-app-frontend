@@ -139,16 +139,7 @@ export default function CallComponent({ user }) {
       try{
         // eslint-disable-next-line react/prop-types
         const myUserName = getEmailUsername(user.email)
-        // eslint-disable-next-line no-undef
-        console.log(`Development : ${process.env.REACT_APP_IS_DEVELOPMENT}`)
-        // eslint-disable-next-line no-undef
-        if(process.env.REACT_APP_IS_DEVELOPMENT){
-          console.log("Development Envoirment")
-          newPeer= new Peer(myUserName , {host: "127.0.0.1", port: 9000, path: "/"});
-        }else{
-          console.log("Production Envoirment")
-          newPeer= new Peer(myUserName);
-        }
+        newPeer= new Peer(myUserName);
       }catch(e){
         toast.error('Error in connection: ' + e.message);
       }
