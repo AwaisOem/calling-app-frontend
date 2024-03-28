@@ -42,4 +42,10 @@ export const getUserInfoByEmail =async (email) =>{
 
 export const recordCallHistory = async ({sender , receiver})=>{
   if(sender == receiver) return;
+  try{
+    const {error} = await supabase.from('calls').insert({'sender': sender, 'reciever': receiver});
+    if(error) console.log(error);
+  }catch(e){
+    console.log(e);
+  }
 }

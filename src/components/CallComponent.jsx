@@ -64,8 +64,13 @@ export default function CallComponent({ user }) {
       let call = null;
 
 
+      setSecondPersonEmail(receiverPeerId)
+      const {data,success} = await getUserInfoByEmail(receiverPeerId)
+      if(success){
+        setSecondPersonAvatarUrl(data.avatar_url)
+      }
+
       try{
-        setSecondPersonEmail(receiverPeerId)
         // eslint-disable-next-line react/prop-types
         call = peerRef.current.call(getEmailUsername(receiverPeerId), localStream , {metadata: {avatar_url: user.user_metadata.avatar_url}});
         console.log('Calling...', receiverPeerId);
