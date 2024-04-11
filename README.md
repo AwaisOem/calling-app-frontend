@@ -15,3 +15,4 @@
     - Enjoy the app
 
 ### Contact if you want to build this along me (Contribute Code)
+### Demo Not Working Email me as reminder to restore supabase's free project 😁
