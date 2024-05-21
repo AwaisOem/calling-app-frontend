@@ -33,7 +33,7 @@ function App() {
       const { error , data} = await supabase.auth.signInWithOAuth({
           provider : "google",
           options: {
-            redirectTo : window.location.href
+            redirectTo : window.location.origin
           }
       })      
       setLoading(false)
