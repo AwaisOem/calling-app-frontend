@@ -144,7 +144,10 @@ export default function CallComponent({ user }) {
       try{
         // eslint-disable-next-line react/prop-types
         const myUserName = getEmailUsername(user.email)
-        newPeer= new Peer(myUserName);
+        newPeer= new Peer(myUserName , {
+          secure: true,
+          host:"calto-backend-awaisoem-3cfa3401.koyeb.app",
+        });
       }catch(e){
         toast.error('Error in connection: ' + e.message);
       }
