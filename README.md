@@ -14,5 +14,8 @@
     - Build Command `pnpm build`
     - Enjoy the app
 
-### Contact if you want to build this along me (Contribute Code)
-### Demo Not Working Email me as reminder to restore supabase's free project 😁
+# Some Screen Shots
+![image](https://github.com/AwaisOem/calling-app-frontend/assets/95477446/d66e07b1-43a2-4968-947d-4be9e5868fce)
+
+
+### If Demo Not Working Email me as reminder to restore supabase's free project 😁
