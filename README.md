@@ -5,6 +5,9 @@
  - netlify for frontend hosting
  - Koyeb for backend hosting
 
+# Project Report
+[link](https://github.com/AwaisOem/calling-app-frontend/blob/a8c19ca99165e6f438ccba40276d1e619f48fc67/Audio%20Calling%20App%20(Calto).pdf)
+
 # HOW to Setup on Your machine
     - Clone Repo
     - Run `pnpm install` or `npm i`
